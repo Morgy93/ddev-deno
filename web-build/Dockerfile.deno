@@ -1,0 +1,2 @@
+#ddev-generated
+COPY --from=denoland/deno:bin /deno /usr/local/bin/deno
