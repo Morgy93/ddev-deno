@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#ddev-generated
+## Description: Run deno in the web container
+## Usage: deno
+## Example: "ddev deno"
+## ExecRaw: true
+## HostWorkingDir: true
+
+deno "$@"
