@@ -3,7 +3,8 @@ setup() {
   export DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )/.."
   export TESTDIR=~/tmp/Morgy93/ddev-deno
   mkdir -p $TESTDIR
-  export PROJNAME=Morgy93/ddev-deno
+  export PROJNAME=test-deno
+  export DDEV_ADDON=Morgy93/ddev-deno
   export DDEV_NON_INTERACTIVE=true
   ddev delete -Oy ${PROJNAME} >/dev/null 2>&1 || true
   cd "${TESTDIR}"
@@ -34,8 +35,8 @@ teardown() {
 @test "install from release" {
   set -eu -o pipefail
   cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
-  echo "# ddev get ddev/ddev-addon-template with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
-  ddev get ddev/ddev-addon-template
+  echo "# ddev get ${DDEV_ADDON} with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
+  ddev get ${DDEV_ADDON}
   ddev restart >/dev/null
   health_checks
 }
