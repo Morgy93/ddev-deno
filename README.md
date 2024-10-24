@@ -27,8 +27,21 @@ YouTube: [What is Deno?](https://www.youtube.com/watch?v=KPTOo4k8-GE)
 
 ## Installation
 
+For DDEV v1.23.5 or above run
+
+```shell
+ddev add-on get Morgy93/ddev-deno
+```
+
+For earlier versions of DDEV run
+
 ```shell
 ddev get Morgy93/ddev-deno
+```
+
+Then restart the project
+
+```shell
 ddev restart
 ```
 
