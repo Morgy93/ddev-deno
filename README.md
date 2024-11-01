@@ -32,7 +32,7 @@ ddev add-on get Morgy93/ddev-deno
 ddev restart
 ```
 
-> **Note**
+> [!NOTE]
 > For older versions of DDEV (prior to v1.23.5), use `ddev get` instead of `ddev add-on get`.
 
 ## Usage
