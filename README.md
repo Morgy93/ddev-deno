@@ -11,7 +11,7 @@
     <h1 align="center">ddev-deno</h1>
 </div>
 
-[![tests](https://github.com/Morgy93/ddev-deno/actions/workflows/tests.yml/badge.svg)](https://github.com/Morgy93/ddev-deno/actions/workflows/tests.yml)
+[![tests](https://github.com/OpenForgeProject/ddev-deno/actions/workflows/tests.yml/badge.svg)](https://github.com/OpenForgeProject/ddev-deno/actions/workflows/tests.yml)
 ![project is maintained](https://img.shields.io/maintenance/yes/2024.svg)
 
 ## What is Deno?
@@ -28,7 +28,7 @@ YouTube: [What is Deno?](https://www.youtube.com/watch?v=KPTOo4k8-GE)
 ## Installation
 
 ```shell
-ddev add-on get Morgy93/ddev-deno
+ddev add-on get OpenForgeProject/ddev-deno
 ddev restart
 ```
 
